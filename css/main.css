@@ -1,0 +1,135 @@
+a {
+  color:white
+}
+
+.pasto{
+  background: #8cb27c;
+  position: relative;
+  height: 400px;
+  width: 800px;
+  display: inline-block;
+  top: 20px;
+  left: 20px
+}
+
+.cal, .porteria1, .porteria2, .centro{
+  border: 5px solid white; position: absolute;
+}
+
+.cal{
+  height: 360px;
+  width: 750px;
+  display: inline-block;
+  top: 93px;
+  left: 50px
+}
+
+.porteria1{
+  height: 110px;
+  width: 70px;
+  display: inline-block;
+  top: 210px;
+  left: 50px;
+}
+
+.porteria2{
+  height: 110px;
+  width: 70px;
+  display: inline-block;
+  top: 210px;
+  left: 729px;
+}
+
+.centro{
+  height: 110px;
+  width: 110px;
+  display: inline-block;
+  top: 210px;
+  left: 365px;
+}
+
+.izq, .cntro, .der{
+  background: white; position: absolute; height: 20px; width: 20px;
+}
+
+.pelota, .centro {
+  border-radius: 50%;
+}
+
+.izq{
+  display: inline-block;
+  top: 220px;
+  left: 117px;
+}
+
+.cntro{
+  display: inline-block;
+  top: 140px;
+  left: 450px;
+}
+
+.der{
+  display: inline-block;
+  top: 300px;
+  right: 630px;
+}
+
+.rojo{
+  background: red;
+  position: relative;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  top: 20px;
+  left: 20px;
+}
+
+.morado{
+  background: purple;
+  position: absolute;
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  top: 130px;
+  left: 85px;
+}
+
+.amarillo{
+  background: yellow;
+  position: absolute;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  top: 130px;
+  left: 85px;
+}
+
+.azul{
+  background: blue;
+  position: relative;
+  display: block;
+  height: 200px;
+  width: 200px;
+  top: 50px;
+  left: 20px;
+}
+
+.verde{
+  background: green;
+  position: absolute;
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  top: 364px;
+  left: 82px;
+}
+
+.negro{
+  background: black;
+  position: relative;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  bottom: 150px;
+  left: 20px;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Clase Práctica</title>
+    <style>
+      .tab {
+        display: none;
+        min-height:500px;
+        background:#333333;
+        display:none;
+        padding:12px;
+        color:white;
+      }
+
+      #tabs{
+        position: relative;
+      }
+
+      #tabs input[type="radio"]{
+        position: absolute;
+        top: -20px;
+        left: -200px;
+      }
+
+      #tabs label {
+        background:#333333;
+        display:inline-block;
+        margin-right:2px;
+        border-radius:3px;
+        padding:14px 20px;
+        font-family:Calibri;
+        font-size:95%;
+        font-weight:700;
+        color:white;
+      }
+
+      #tabs label:hover {
+        background: #F9A91A;
+      }
+
+      #tab-cancha:checked ~ #cancha,
+      #tab-cuadritos:checked ~ #cuadritos,
+      #tab-positioning:checked ~ #positioning,
+      #tab-triptico:checked ~ #triptico,
+      #tab-menu:checked ~ #menu
+      {
+        display: block;
+      }
+
+    </style>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+  <body>
+    <div id="tabs">
+      <input type="radio" name="tabs" id="tab-cancha" checked="checked"/>
+      <label for="tab-cancha">La cancha</label>
+
+      <input type="radio" name="tabs" id="tab-cuadritos"/>
+      <label for="tab-cuadritos">Posicionando cajas</label>
+
+      <input type="radio" name="tabs" id="tab-positioning"/>
+      <label for="tab-positioning">CSS Positioning 101</label>
+
+      <input type="radio" name="tabs" id="tab-triptico"/>
+      <label for="tab-triptico">El tríptico</label>
+
+      <input type="radio" name="tabs" id="tab-menu"/>
+      <label for="tab-menu">Tipografías e íconos</label>
+
+      <div id="cancha" class="tab">
+        <!--Mi cancha toda bonita -->
+        <div class="pasto"></div>
+        <div class="cal"></div>
+        <div class="porteria1"></div>
+        <div class="porteria2"></div>
+        <div class="centro"></div>
+        <div class="pelota izq"></div>
+        <div class="pelota cntro"></div>
+        <div class="pelota der"></div>
+      </div>
+
+      <div id="cuadritos" class="tab">
+        <!-- Mis cuadritos de colores, bien bonitos -->
+        <div class="rojo"></div>
+        <div class="morado"></div>
+        <div class="amarillo"></div>
+        <div class="azul"></div>
+        <div class="verde"></div>
+        <div class="negro"></div>
+      </div>
+
+      <div id="positioning" class="tab">
+        <!-- <iframe src="views/example-A.html" height="300px"></iframe> -->
+        <ul>
+          <li><a href="views/example-A.html">Example A</a></li>
+          <li><a href="views/example-B.html">Example B</a></li>
+          <li><a href="views/example-C.html">Example C</a></li>
+          <li><a href="views/example-D.html">Example D</a></li>
+          <li><a href="views/example-E.html">Example E</a></li>
+          <li><a href="views/example-F.html">Example F</a></li>
+          <li><a href="views/example-G.html">Example G</a></li>
+          <li><a href="views/example-H.html">Example H</a></li>
+          <li><a href="views/example-H2.html">Example H2</a></li>
+          <li><a href="views/example-H3.html">Example H3</a></li>
+          <li><a href="views/example-I.html">Example I</a></li>
+          <li><a href="views/example-J.html">Example J</a></li>
+        </ul>
+
+      </div>
+
+      <div id="triptico" class="tab">
+        Un tríptico no tan bonico
+      </div>
+
+      <div id="menu" class="tab">
+        Un menú con iconos bonitus
+      </div>
+
+  </div>
+  </body>
+
+
+</html>
