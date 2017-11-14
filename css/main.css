@@ -1,3 +1,5 @@
+/*Estilos para el ejerciico La cancha*/
+
 a {
   color:white
 }
@@ -20,36 +22,40 @@ a {
   height: 360px;
   width: 750px;
   display: inline-block;
-  top: 93px;
-  left: 50px
+  top: 15px;
+  left: 20px
 }
 
 .porteria1{
   height: 110px;
   width: 70px;
   display: inline-block;
-  top: 210px;
-  left: 50px;
+  top: 140px;
+  left: 20px;
 }
 
 .porteria2{
   height: 110px;
   width: 70px;
   display: inline-block;
-  top: 210px;
-  left: 729px;
+  top: 140px;
+  left: 700px;
 }
 
 .centro{
   height: 110px;
   width: 110px;
   display: inline-block;
-  top: 210px;
-  left: 365px;
+  top: 140px;
+  left: 340px;
 }
 
 .izq, .cntro, .der{
-  background: white; position: absolute; height: 20px; width: 20px;
+  background: white;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  box-shadow: 1px 1px 1px #000;
 }
 
 .pelota, .centro {
@@ -58,78 +64,355 @@ a {
 
 .izq{
   display: inline-block;
-  top: 220px;
-  left: 117px;
+  top: 2px;
+  left: 63px;
 }
 
 .cntro{
   display: inline-block;
-  top: 140px;
-  left: 450px;
+  bottom: 160px;
+  left: 60px;
 }
 
 .der{
   display: inline-block;
-  top: 300px;
-  right: 630px;
+  top: 80px;
+  left: -35px;
 }
 
-.rojo{
+/*Estilos para el ejercicio Posicionando cajas*/
+.red{
   background: red;
   position: relative;
-  display: inline-block;
   height: 200px;
   width: 200px;
   top: 20px;
   left: 20px;
 }
 
-.morado{
+.purple{
   background: purple;
   position: absolute;
-  display: inline-block;
   height: 100px;
   width: 100px;
-  top: 130px;
-  left: 85px;
+  top: 50px;
+  left: 50px;
 }
 
-.amarillo{
+.yellow{
   background: yellow;
   position: absolute;
-  display: inline-block;
   height: 50px;
   width: 50px;
-  top: 130px;
-  left: 85px;
 }
 
-.azul{
+.blue{
   background: blue;
   position: relative;
-  display: block;
   height: 200px;
   width: 200px;
   top: 50px;
   left: 20px;
 }
 
-.verde{
+.green{
   background: green;
   position: absolute;
-  display: inline-block;
   height: 100px;
   width: 100px;
-  top: 364px;
-  left: 82px;
+  top: 50px;
+  left: 50px;
 }
 
-.negro{
+.black{
   background: black;
-  position: relative;
-  display: inline-block;
+  position: absolute;
   height: 50px;
   width: 50px;
-  bottom: 150px;
+}
+
+/*
+.flotante{
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  background: orange;
+  bottom: 140px
+  left: 600px
+}
+*/
+
+/*Estilos para el ejercicio CSS Positioning 101 (con vistas)*/
+#box_1, #box_2, #box_3{
+  position: static;
+  width: 200px;
+  height: 200px;
+}
+
+#box_1,
+#box_1b,
+#box_1c,
+#box_1d,
+#box_1e,
+#box_1f,
+#box_1h,
+#box_1h2,
+#box_1h3 {
+  background: #ee3e64;
+}
+
+#box_2,
+#box_2b,
+#box_2c,
+#box_2d,
+#box_2e,
+#box_2f,
+#box_1g,
+#box_2h2,
+#box_2h3 {
+  background: #44accf;
+}
+
+#box_3,
+#box_3b,
+#box_3c,
+#box_3d,
+#box_3e,
+#box_3f,
+#box_2h {
+  background: #b7d84b;
+}
+
+#box_1b,
+#box_2b,
+#box_3b,
+#box_1c,
+#box_2c,
+#box_3c,
+#box_1d,
+#box_2d,
+#box_3d{
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+#box_2c, #box_2d{
+  left: 200px;
+}
+
+#box_1e,
+#box_2e,
+#box_3e,
+#box_4e,
+#box_1f,
+#box_2f,
+#box_3f,
+#box_4f,
+#box_2h2,
+#box_2h3 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+
+#box_1e, #box_1f {
+  top: 0;
+  left: 0;
+}
+
+#box_2e, #box_2f {
+  top: 0;
+  right: 0;
+}
+
+#box_3e, #box_3f {
+  bottom: 0;
+  left: 0;
+  }
+
+#box_4e, #box_4f {
+  bottom: 0;
+  right: 0;
+  background: #ebde52;
+}
+
+.orange {
+  background: #f95b34;
+  position: absolute;
+  top: 39%;
+  left: 41%;
+  width: 40px;
+  height: 40px;
+}
+
+#box_1g {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+}
+
+#box_2g {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
   left: 20px;
+  background: #ff9c34;
+}
+
+#box_1h {
+  position: absolute;
+  top: 0;
+  right: 20%;
+  bottom: 0;
+  left: 0;
+}
+
+#box_2h {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 80%;
+}
+
+#box_1h2,
+#box_1h3 {
+  width: 200px;
+  height: 200px;
+}
+
+#box_2h2 {
+  left: 100px;;
+}
+
+#box_2h3 {
+top: 0;
+left: 100px;
+}
+
+#box_2i {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #f95b34;
+}
+
+#j {
+ margin: 0;
+ font: normal 12px/18px 'Helvetica', Arial, sans-serif;
+ background: #44accf;
+}
+
+#container {
+  width: 900px;
+  margin: 0 auto;
+}
+#content {
+  position: relative;
+  padding: 20px 250px 60px 20px;
+  background: #fff;
+}
+#nav {
+  height: 50px;
+  background: #b7d84b;
+}
+#callout {
+  position: absolute;
+  top: 100px;
+  bottom: 100px;
+  right: -80px;
+  width: 210px;
+  padding: 0 20px;
+  border-top: 5px solid #f95b34;
+  background: #fa8366;
+}
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 860px;
+  padding: 0 20px;
+  background: #f36283;
+}
+
+#nav a {
+  display: block;
+  float: left;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px;
+  line-height: 50px;
+  border-right: 1px solid #91ab3b;
+}
+#nav a:hover {
+  background: #91ab3b;
+}
+#callout p {
+  color: #fff;
+}
+
+/*Estilos para el ejercicio El tríptico*/
+
+p{
+  text-align: justify;
+  color: black;
+  padding: 12px 5px 5px 12px;
+  font-size: 14px
+}
+
+img{
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  right: 500px;
+}
+
+.titulo {
+  text-align: center;
+  color: black;
+}
+
+.cabecera, .pie{
+  border: 1px solid black;
+  width: 899px;
+  height: 30px;
+  background: #F9A91A;
+  text-align: center;
+  color: black;
+  font-size: 17px;
+}
+
+.cuerpo{
+  width: 899px;
+  height: 450px;
+  border: 1px solid black;
+  background: black;
+}
+
+.panel-der{
+  width: 299px;
+  height: 448px;
+  background-color: #fff;
+  float:left;
+  color: black;
+}
+
+.panel-izq{
+  width: 299px;
+  height: 448px;
+  background-color: #fff;
+  float: right;
+}
+
+.panel-cntr{
+  position: relative;
+  bottom: 20px;
+  margin-left: 300px;
+  width: 299px;
+  height: 448px;
+  background-color: #fff;
 }
