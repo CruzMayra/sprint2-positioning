@@ -1,3 +1,47 @@
+.tab {
+  display: none;
+  min-height:500px;
+  background:#333333;
+  display:none;
+  padding:12px;
+  color:white;
+}
+
+#tabs{
+  position: relative;
+}
+
+#tabs input[type="radio"]{
+  position: absolute;
+  top: -20px;
+  left: -200px;
+}
+
+#tabs label {
+  background:#333333;
+  display:inline-block;
+  margin-right:2px;
+  border-radius:3px;
+  padding:14px 20px;
+  font-family:Calibri;
+  font-size:95%;
+  font-weight:700;
+  color:white;
+}
+
+#tabs label:hover {
+  background: #F9A91A;
+}
+
+#tab-cancha:checked ~ #cancha,
+#tab-cuadritos:checked ~ #cuadritos,
+#tab-positioning:checked ~ #positioning,
+#tab-triptico:checked ~ #triptico,
+#tab-menu:checked ~ #menu
+{
+  display: block;
+}
+
 /*Estilos para el ejerciico La cancha*/
 .pasto{
   background: #8cb27c;
